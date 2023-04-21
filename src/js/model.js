@@ -6,6 +6,8 @@ n;
 
 export const state = {
   isLoggedIn: false,
+  questionTypes: ['ADD', 'SUB', 'MUL', 'DIV', 'COUNT'],
+  selectedQuestionType: 'ADD',
   addQuestions: [],
   countQuestions: [],
   progress: {
