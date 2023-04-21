@@ -1,14 +1,15 @@
 import View from './views';
-import dora from 'url:../../img/dora-didit.gif';
-import celeb from 'url:../../img/celeb.gif';
-import thumbsup from 'url:../../img/thumbs-up.gif';
-import pepa from 'url:../../img/pepa.gif';
+import dora from 'url:../../img/gif/dora-didit.gif';
+import celeb from 'url:../../img/gif/celeb.gif';
+import thumbsup from 'url:../../img/gif/thumbs-up.gif';
+import pepa from 'url:../../img/gif/pepa.gif';
+import mickey from 'url:../../img/gif/mickey-celebration.gif';
 
 class Status extends View {
   _parentContainer = document.querySelector('.status');
 
   _selectImage() {
-    const images = [dora, celeb, thumbsup, pepa];
+    const images = [dora, celeb, thumbsup, pepa, mickey];
     const index = Math.floor(Math.random() * images.length);
     return images[index];
   }

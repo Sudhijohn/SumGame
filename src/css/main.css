@@ -34,6 +34,18 @@ body {
   align-items: center;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 .loader img {
   width: 50rem;
 }
@@ -220,7 +232,7 @@ svg {
 
 .answer input:focus {
   background-color: rgb(198, 218, 198);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .hide {

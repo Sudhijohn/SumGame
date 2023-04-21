@@ -43,8 +43,7 @@ const loginHandler = userData => {
 const launchGameForJewel = () => {
   model.createInitalState();
 
-  NavLinks.displayView(model.state.users);
-  NavLinks.addClickHandler(controlLogin);
+  initiateNavLinks();
 
   AddQuestion.display(model.state.addQuestions);
   AddQuestion.addChangeHandler(controlAddAnswers);
@@ -53,11 +52,15 @@ const launchGameForJewel = () => {
 const launchGameForJaiden = () => {
   model.createCountState();
 
-  NavLinks.displayView(model.state.users);
-  NavLinks.addClickHandler(controlLogin);
+  initiateNavLinks();
 
   countQuestion.display(model.state.countQuestions);
   countQuestion.addChangeHandler(controlCountAnswers);
+};
+
+const initiateNavLinks = () => {
+  NavLinks.displayView(model.state.users);
+  NavLinks.addClickHandler(controlLogin);
 };
 
 const launchApp = () => {
