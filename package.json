@@ -1,0 +1,16 @@
+{
+  "name": "sum",
+  "version": "1.0.0",
+  "description": "sum game for jewel",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Sudhi",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.1"
+  },
+  "devDependencies": {}
+}
